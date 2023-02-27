@@ -1,0 +1,26 @@
+.back {
+  background-color: #fae9e9;
+  width: 70%;
+  height: 100%;
+  margin: -20px auto 0px auto;
+}
+
+.date {
+  color: #008080;
+  font-family: "Montserrat";
+  padding-top: 30px;
+}
+
+h1 {
+  font-family: "Roboto";
+}
+
+.info {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.text {
+  padding-bottom: 20px;
+  font-family: "Open Sans";
+}

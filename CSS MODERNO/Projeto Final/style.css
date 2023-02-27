@@ -1,0 +1,601 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 200px;
+}
+
+#cabecalho {
+  text-align: center;
+  padding: 1.7vh;
+}
+
+.container {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(37, 37, 37);
+  padding: 10px 30px;
+}
+
+.navbar {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 20px;
+  padding: 0px 15px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background: #ff0044;
+  bottom: -10px;
+  border-radius: 40px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+.navbar a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.txtc {
+  font-size: 30px;
+}
+
+.imagem {
+  flex-basis: auto;
+  width: 100%;
+  height: 270px;
+  border-radius: 10px;
+  min-width: 340px;
+}
+
+.item {
+  background-color: white;
+  flex: 1 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  gap: 5vh 5vh;
+  padding: 10px;
+  text-align: left;
+  margin-left: 10vh;
+  margin-right: 3vh;
+  margin-bottom: 1vh;
+  grid-template-areas:
+    "item1 item2 item3 item4"
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item4"
+    "item5 item6 item7 item4"
+    "item8 item9 item10 item4"
+    "item8 item9 item10 item4";
+}
+
+.box {
+  font-size: 30px;
+  background-color: white;
+  align-self: flex-start;
+  text-align: left;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+}
+
+.lore {
+  font-size: 25px;
+}
+
+.gustavo {
+  color: white;
+  font-size: 20px;
+}
+
+.caixa {
+  font-size: 30px;
+  background-color: white;
+  align-self: flex-start;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+}
+
+.item1 {
+  grid-area: item1;
+  cursor: pointer;
+  min-width: 250px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.item1:hover {
+  border-color: black;
+}
+
+.item2 {
+  grid-area: item2;
+  cursor: pointer;
+  min-width: 250px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.item2:hover {
+  border-color: black;
+}
+
+.item3 {
+  grid-area: item3;
+  cursor: pointer;
+  min-width: 250px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.item3:hover {
+  border-color: black;
+}
+
+.item4 {
+  grid-area: item4;
+  flex: 1 0 900px;
+  min-width: 387px;
+  margin-left: 1vh;
+  background-color: rgb(37, 37, 37);
+  text-align: center;
+  padding: 10px;
+  padding-top: 30px;
+  color: white;
+}
+
+.extra {
+  flex-direction: column;
+  flex: 1 0 100px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  padding: 30px;
+  min-width: 335px;
+  text-align: center;
+  margin: 1vh;
+  font-size: 20px;
+  display: flex;
+  gap: 25px 25px;
+  grid-template-areas:
+    "mais1"
+    "mais2"
+    "mais3"
+    "mais4"
+    "mais5";
+}
+
+.imge {
+  width: 100%;
+  height: 190px;
+  min-width: 235px;
+  border-radius: 10px;
+}
+
+.text1 {
+  font-size: 30px;
+}
+
+.mais1 {
+  grid-area: mais1;
+  cursor: pointer;
+  min-width: 100px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.mais1:hover {
+  border-color: rgb(250, 250, 250);
+}
+
+.mais2 {
+  grid-area: mais2;
+  cursor: pointer;
+  min-width: 100px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.mais2:hover {
+  border-color: rgb(250, 250, 250);
+}
+
+.mais3 {
+  grid-area: mais3;
+  cursor: pointer;
+  min-width: 100px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.mais3:hover {
+  border-color: rgb(250, 250, 250);
+}
+
+.mais4 {
+  grid-area: mais4;
+  cursor: pointer;
+  min-width: 100px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.mais4:hover {
+  border-color: rgb(250, 250, 250);
+}
+
+.mais5 {
+  grid-area: mais5;
+  cursor: pointer;
+  min-width: 100px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.mais5:hover {
+  border-color: rgb(250, 250, 250);
+}
+
+.item5 {
+  grid-area: item5;
+  cursor: pointer;
+  min-width: 250px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.item5:hover {
+  border-color: black;
+}
+
+.item6 {
+  grid-area: item6;
+  cursor: pointer;
+  min-width: 250px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.item6:hover {
+  border-color: black;
+}
+
+.item7 {
+  grid-area: item7;
+  cursor: pointer;
+  min-width: 250px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.item7:hover {
+  border-color: black;
+}
+
+.item8 {
+  grid-area: item8;
+  cursor: pointer;
+  min-width: 250px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.item8:hover {
+  border-color: black;
+}
+
+.item9 {
+  grid-area: item9;
+  cursor: pointer;
+  min-width: 250px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.item9:hover {
+  border-color: black;
+}
+
+.item10 {
+  grid-area: item10;
+  cursor: pointer;
+  min-width: 250px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: 0.4s;
+}
+
+.item10:hover {
+  border-color: black;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(37, 37, 37);
+  padding: 10px 30px;
+}
+
+@media (max-width: 1665px) {
+  .item {
+    background-color: white;
+    flex: 1 0 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    gap: 5vh 5vh;
+    padding: 10px;
+    text-align: left;
+    margin-left: 10vh;
+    margin-right: 3vh;
+    margin-bottom: 1vh;
+    grid-template-areas:
+      "item1 item2 item4"
+      "item1 item2 item4"
+      "item3 item5 item4"
+      "item3 item5 item4"
+      "item6 item7 item4"
+      "item6 item7 item4"
+      "item8 item9 blank"
+      "item8 item9 blank"
+      "item10 none none"
+      "item10 none none";
+  }
+  .item4 {
+    grid-area: item4;
+    flex: 1 0 900px;
+    max-width: 387px;
+    margin-left: 1vh;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    color: white;
+  }
+}
+
+@media (max-width: 1300px) {
+  .item {
+    background-color: white;
+    flex: 1 0 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    gap: 5vh 5vh;
+    padding: 10px;
+    text-align: left;
+    margin-left: 10vh;
+    margin-right: 3vh;
+    margin-bottom: 1vh;
+    grid-template-areas:
+      "item1 item4"
+      "item1 item4"
+      "item2 item4"
+      "item2 item4"
+      "item3 item4"
+      "item3 item4"
+      "item5 blank"
+      "item5 blank"
+      "item6 none"
+      "item6 none"
+      "item7 none"
+      "item7 none"
+      "item8 none"
+      "item8 none"
+      "item9 none"
+      "item9 none"
+      "item10 none"
+      "item10 none";
+  }
+  .item4 {
+    grid-area: item4;
+    flex: 1 0 900px;
+    max-width: 387px;
+    margin-left: 1vh;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    color: white;
+  }
+}
+
+@media (max-width: 914px) {
+  .item {
+    background-color: white;
+    flex: 1 0 900px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    gap: 5vh 5vh;
+    padding: 10px;
+    text-align: left;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    margin-bottom: 1vh;
+    grid-template-areas:
+      "item1"
+      "item1"
+      "item2"
+      "item2"
+      "item3"
+      "item3"
+      "item4"
+      "item4"
+      "item4"
+      "item4"
+      "item4"
+      "item4"
+      "item5"
+      "item5"
+      "item6"
+      "item6"
+      "item7"
+      "item7"
+      "item8"
+      "item8"
+      "item9"
+      "item9"
+      "item10"
+      "item10";
+  }
+  .item4 {
+    grid-area: item4;
+    flex: 1 0 900px;
+    max-width: 387px;
+    margin-left: 1vh;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    color: white;
+  }
+}
+
+@media (max-width: 914px) {
+  .item {
+    background-color: white;
+    flex: 1 0 900px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    gap: 5vh 5vh;
+    padding: 10px;
+    text-align: left;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    margin-bottom: 1vh;
+    grid-template-areas:
+      "item1"
+      "item1"
+      "item2"
+      "item2"
+      "item3"
+      "item3"
+      "item5"
+      "item5"
+      "item6"
+      "item6"
+      "item7"
+      "item7"
+      "item8"
+      "item8"
+      "item9"
+      "item9"
+      "item10"
+      "item10"
+      "item4"
+      "item4"
+      "item4"
+      "item4"
+      "item4"
+      "item4";
+  }
+  .item4 {
+    grid-area: item4;
+    flex: 1 0 900px;
+    max-width: 387px;
+    margin-left: 1vh;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    color: white;
+  }
+}
+
+@media (max-width: 760px) {
+  .item {
+    background-color: white;
+    flex: 1 0 900px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    gap: 5vh 5vh;
+    padding: 3px;
+    margin: auto;
+    max-width: 425px;
+    text-align: left;
+    grid-template-areas:
+      "item1"
+      "item1"
+      "item2"
+      "item2"
+      "item3"
+      "item3"
+      "item5"
+      "item5"
+      "item6"
+      "item6"
+      "item7"
+      "item7"
+      "item8"
+      "item8"
+      "item9"
+      "item9"
+      "item10"
+      "item10"
+      "item4"
+      "item4"
+      "item4"
+      "item4"
+      "item4"
+      "item4";
+  }
+  .item4 {
+    grid-area: item4;
+    flex: 1 0 900px;
+    max-width: 387px;
+    margin: auto;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    color: white;
+  }
+}
